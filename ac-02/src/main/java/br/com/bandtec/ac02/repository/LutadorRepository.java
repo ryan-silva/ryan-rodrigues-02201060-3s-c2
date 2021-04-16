@@ -18,6 +18,4 @@ public interface LutadorRepository  extends JpaRepository<Lutador,Integer> {
 
 
 
-
-
 }
