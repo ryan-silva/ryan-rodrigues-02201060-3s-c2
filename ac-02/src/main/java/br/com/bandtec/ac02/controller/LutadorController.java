@@ -38,5 +38,4 @@ public class LutadorController {
         return ResponseEntity.status(200).body(repository.findByVidaEquals(0.0));
     }
 
-
 }

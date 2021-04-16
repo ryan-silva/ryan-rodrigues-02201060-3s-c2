@@ -15,7 +15,5 @@ public interface LutadorRepository  extends JpaRepository<Lutador,Integer> {
     Long findAllVivos();
 
     List<Lutador> findByVidaEquals(Double vida);
-
-
-
+    
 }
