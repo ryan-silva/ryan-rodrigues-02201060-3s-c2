@@ -26,6 +26,7 @@ public class Lutador {
     private Double vida = 100.0;
 
     @PositiveOrZero
+    @Max(3)
     private Integer concentracoesRealizadas = 0;
 
     private Boolean vivo = true;
@@ -55,7 +56,7 @@ public class Lutador {
     }
 
     public Double getVida() {
-        return vida;
+        return vida + (getConcentracoesRealizadas() * 0.15);
     }
 
     public void setVida(Double vida) {
